@@ -1,8 +1,4 @@
 var hour = $('.datetime')
-// var task = $('.description')
-// var save = $('.saveBtn')
-// var timeDisplay = $('#currentDay')
-
 
 // Adds the current date and time to the header
 setInterval(() => {
