@@ -1,3 +1,10 @@
+var hour = $('.datetime')
+var task = $('.description')
+var save = $('.saveBtn')
+var timeDisplay = $('#currentDay')
+
+
+// Adds the current date and time to the header
 setInterval(() => {
     var now = moment();
     // console.log(now.format('MMM, DD YYYY [at] hh:mm:ss a'));
@@ -5,28 +12,41 @@ setInterval(() => {
 }, 1000);
 
 
-
+// Change color of row based upon current time
 function checkHour() {
-    var currentHour = moment().hour('')
+    var currentHour = moment().hour()
 
     $('.time-block').each(function () {
+        var timeBlock = parseInt($(this).attr('id'));
 
-        var hour = parseInt($(this).attr('id'))
-
-        if (hour <= currentHour) {
-            $(this).addClass('past');
-        } else if (hour === currentHour) {
-            $(this).removeClass('past');
-            $(this).addClass('present');
+        if (currentHour < timeBlock) {
+            $(this).addClass('future').removeClass("past present");
         }
-        else {
-            $(this).removeClass('present');
-            $(this).removeClass('past');
-            $(this).addClass('future');
+        else if (currentHour > timeBlock) {
+            $(this).addClass('past').removeClass("present future");
         }
-
-    })
+        else if (currentHour === timeBlock) {
+            $(this).addClass('present').removeClass("past future")
+        }
+    });
+   
 }
 
 checkHour();
 setInterval(checkHour, 30000)
+
+// function taskSave(event) {
+//     preventDefault()
+
+//     localStorage.setItem('description', task)
+//     }
+//     SVGAElement.on('submit', tasksave)
+
+//     taskSave();
+     
+//     var currentTask = $(TaskTextBox)
+
+//     taskretrieve() {
+//         localStorage.getItem(task)
+
+//     }
