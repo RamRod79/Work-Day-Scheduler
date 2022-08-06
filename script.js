@@ -1,12 +1,5 @@
 var hour = $('.datetime')
-<<<<<<< HEAD
-=======
-// var storevalaue = document.querySelector('.');
-var text = document.querySelector('.text');
-var button = document.querySelector('.button'); 
 
-
->>>>>>> refs/remotes/origin/main
 
 // Adds the current date and time to the header
 setInterval(() => {
@@ -37,13 +30,8 @@ function checkHour() {
 checkHour();
 setInterval(checkHour, 30000)
 
-<<<<<<< HEAD
-=======
-
-// Local storage
-function display(){
-     localStorage.setItem('data', input.value(.text));
-     h2 = 'Appointment added to localStorage'
-}
-
->>>>>>> refs/remotes/origin/main
+// // Local storage
+// function display(){
+//      localStorage.setItem('data', input.value(.text));
+//      h2 = 'Appointment added to localStorage'
+// }
