@@ -45,7 +45,7 @@ THEN the saved events persist
 
 ## Snapshot
 
-![The password webpage includes a display for the password, a button to click to initiate the generation of a password and prompts while choosing a password.](./assets/images/quiz.jpg).
+![The password webpage includes a display for the password, a button to click to initiate the generation of a password and prompts while choosing a password.](./assets/images/work%20scheduler.jpg).
 
 ## Link
 

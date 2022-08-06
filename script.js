@@ -1,7 +1,7 @@
 var hour = $('.datetime')
-var task = $('.description')
-var save = $('.saveBtn')
-var timeDisplay = $('#currentDay')
+// var task = $('.description')
+// var save = $('.saveBtn')
+// var timeDisplay = $('#currentDay')
 
 
 // Adds the current date and time to the header
@@ -35,18 +35,3 @@ function checkHour() {
 checkHour();
 setInterval(checkHour, 30000)
 
-// function taskSave(event) {
-//     preventDefault()
-
-//     localStorage.setItem('description', task)
-//     }
-//     SVGAElement.on('submit', tasksave)
-
-//     taskSave();
-     
-//     var currentTask = $(TaskTextBox)
-
-//     taskretrieve() {
-//         localStorage.getItem(task)
-
-//     }
