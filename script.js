@@ -1,7 +1,8 @@
 var hour = $('.datetime')
-var task = $('.description')
-var save = $('.saveBtn')
-var timeDisplay = $('#currentDay')
+// var storevalaue = document.querySelector('.');
+var text = document.querySelector('.text');
+var button = document.querySelector('.button'); 
+
 
 
 // Adds the current date and time to the header
@@ -29,24 +30,14 @@ function checkHour() {
             $(this).addClass('present').removeClass("past future")
         }
     });
-   
 }
-
 checkHour();
 setInterval(checkHour, 30000)
 
-// function taskSave(event) {
-//     preventDefault()
 
-//     localStorage.setItem('description', task)
-//     }
-//     SVGAElement.on('submit', tasksave)
+// Local storage
+function display(){
+     localStorage.setItem('data', input.value(.text));
+     h2 = 'Appointment added to localStorage'
+}
 
-//     taskSave();
-     
-//     var currentTask = $(TaskTextBox)
-
-//     taskretrieve() {
-//         localStorage.getItem(task)
-
-//     }
