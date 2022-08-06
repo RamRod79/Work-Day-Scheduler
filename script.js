@@ -30,6 +30,7 @@ function checkHour() {
 checkHour();
 setInterval(checkHour, 30000)
 
+
 // // Local storage
 // function display(){
 //      localStorage.setItem('data', input.value(.text));
